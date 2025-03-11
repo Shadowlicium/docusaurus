@@ -1,4 +1,4 @@
-# Cahier des charges :
+# Cahier des charges
 
 L’entreprise nous demande de mettre en place une infrastructure afin de centraliser l’authentification de ses utilisateurs, il demande la mise en place d’un contrôleur de domaine Linux Samba AD DS avec le système de partage de fichiers sécurisé sous NFS.
 
