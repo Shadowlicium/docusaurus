@@ -1,5 +1,5 @@
 ---
-sidebar_popsition: 6
+sidebar_popsition: 8
 ---
  
 Grafana sera installé sur un debian 12 dans AWS avec la composition suivante :
