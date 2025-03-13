@@ -1,9 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-Schéma a fournir
 
-Notre infrastructure sera soutenu sur AWS, le service proposer par Amazon afin de faire tenir nos serveurs.
+Notre infrastructure sera soutenu sur AWS, le service proposer par Amazon afin de répondre a la demande du client
 
-explication du réseau
+explication de l'infrastructure
+
+![](/img/Project.png)
