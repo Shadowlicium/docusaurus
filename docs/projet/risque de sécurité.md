@@ -23,3 +23,14 @@ Mettre en place du monitoring + logs afin de voir les intrusions
 - mauvaise gestion du partage
 - attaque par usurpation
 
+### Risque de sécurité internet
+
+- perte internet
+- chute de AWS 
+- routeur qui tombe
+
+### Mesure de sécurité
+
+- Prévoir un deuxième FAI (voir pour une troisième solution, comme la 5G si possible)
+- Prévoir des backup des machines au cas ou + souscrire a une assurance qui prévoit ce risque
+- prévoir au moins deux routeurs mis en redondance

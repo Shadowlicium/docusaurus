@@ -109,6 +109,31 @@ Pour rejoindre le domaine il suffira d'entrer sur une machine cliente
 realm join nom.domaine.racine
 ```
 
+### Créer un utilisateur dans l'adds de Samba
+
+Pour créer un utilsateur, il faudra tout d'abord en ajouter un sur la machine local
+```
+adduser nom_utilisateur
+```
+Créer ensuite l'utilisateur sur Samba
+```
+smbpasswd -a nom_utilisateur
+```
+Ajouter ensuite l'utilisateur au partage de fichier
+```
+smbpasswd -e nom_utilisateur
+```
+Pour voir les utilisateurs ainsi que leur groupe
+```
+pdbedit -L
+```
+
+### Se connecter a un utilisateur de l'adds
+
+```
+ssh nom_utilisateur@domaine.racine
+```
+
 ### Annexe
 
 exemple d'une config smb pour samba
@@ -118,3 +143,4 @@ exemple d'une config smb pour samba
 exemple d'une configuration krb5
 
 ![](/img/krb5.png)
+

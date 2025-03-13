@@ -44,3 +44,7 @@ aws ec2 describe-import-image-tasks --import-task-ids import-ami-xxxxxxxx
 une fois que la status est passé a "completed" alors on peut créer l'instance dans **AWS EC2**
 
 une fois l'instance créer, vous pouvez recuperer l'ip publique et vous connecter en ssh en récupérant la clé de sécurité fourni lors de la création de l'instance.
+
+certaines configuration doit être changer afin de correspondre aux attentes. (se réferrer a [samba-adds](./samba-adds.md))
+
+Le VPN devrait être mis en place afin de favoriser la sécurité et la confidentialité du serveur.
