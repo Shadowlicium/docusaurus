@@ -25,17 +25,45 @@ systemctl start grafana-server
 wget https://github.com/prometheus/prometheus/releases/download/v2.51.2/prometheus-2.51.2.linux-amd64.tar.gz
 ```
 
-extraction du tar.gr
+Extraction du tar.gr
 
 ```
 tar xvf prometheus-2.51.2.linux-amd64.tar.gz
 ```
 
-déplacer les dossiers au bonnes endroits
+Déplacer les dossiers au bonnes endroits
 
 ```
 cd prometheus-2.51.2.linux-amd64
 mv prometheus promtool /usr/local/bin/
 mv consoles/ console_libraries/ /etc/prometheus/
 mv prometheus.yml /etc/prometheus/
+```
+
+Créer le service systemd
+```
+nano /etc/systemd/system/prometheus.service
+```
+![](/img/prom-serv.png)
+
+
+Installation du node de prometheus
+
+```
+wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
+tar xvf node_exporter-1.7.0.linux-amd64.tar.gz
+mv node_exporter-1.7.0.linux-amd64/node_exporter /usr/local/bin/
+```
+Créer le service 
+```
+nano /etc/systemd/system/node_exporter.service
+```
+![](/img/prom-node.png)
+
+
+Initialisation
+```
+sudo systemctl daemon-reload
+sudo systemctl enable prometheus node_exporter
+sudo systemctl start prometheus node_exporter
 ```
