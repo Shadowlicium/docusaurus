@@ -20,4 +20,6 @@ Avant d'importer ensuite les machines sur AWS, nous avons fait les tests en inte
 
 Notre premier panneau STOP a été lors de la création du vpn, nous avions tout d'abord tenter de relié un wireguard entre le routeur de test que nous avions (qui simulerais l'entreprise) avec le serveur SAMBA se trouvant sur AWS.
 
-Après concertation, nous avons déduis que le vpn doit être créer dans les configurations disponibles de AWS notamment le VPC, mais par faute de temps et de connaissance, la solution n'aura pas pu être aboutit
+Après concertation, nous avons déduis que le vpn doit être créer dans les configurations disponibles de AWS notamment le VPC, mais par faute de temps et de connaissance, la solution n'aura pas pu être aboutit.
+
+Nous avons fini par la mise en place d'une solution de supervision avec Grafana et Prometheus afin de pouvoir monitorer les services Samba et recevoir des retours lorsque celui-ci ne répond plus.
