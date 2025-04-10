@@ -95,7 +95,7 @@ x.x.x.x:/share /mnt/nfs4_share nfs4 defaults 0 0
 
 ## 6. Sécuriser davantage NFSv4
 
-- Limiter les accès en restreignant les IPs autorisées dans /etc/exports.\
+- Limiter les accès en restreignant les IPs autorisées dans /etc/exports.
 - Activer Kerberos afin d'autoriser l'authentificiation obligatoire en utilisant NFSv4
 - Verrouiller les permission avec chmod et chown afin de restreindre l'accès de certain document/fichier a des utilisateur/groupe.
 
