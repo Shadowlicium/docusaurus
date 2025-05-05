@@ -12,4 +12,5 @@ Solution apporté :
 
 Intune sera notre solution MDM
 
-Android Studio sera utilisé afin de émuler un appareil mobile.
+Android Studio sera utilisé afin d'émuler un appareil mobile.
+
