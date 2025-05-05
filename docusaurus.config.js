@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Projet IaaS SaaS',
-  tagline: 'Dinosaurs are cool',
+  title: 'Documentations Projets',
+  tagline: 'Cybersecurity is cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -22,7 +22,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'shadowlicium', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -46,7 +46,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            '',
         },
         blog: {
           showReadingTime: true,
@@ -76,7 +76,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Projet',
+        title: 'Documentation',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -86,7 +86,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Projet',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
