@@ -15,5 +15,7 @@ Intune prend en charge les appareils **Android 8.0 ou plus** mais possède plus 
 
 Il suffira de se créer un compte microsoft pour l'entreprise et de répondre a la question de sécurité
 
-Installé **portail entr. Microsoft Intune** sur l'appareil mobile et autorisé ensuite dans les sécurité de l'app les modification admin par celui-ci
+Installé **portail entr. Microsoft Intune** sur l'appareil mobile afin de pouvoir vous authentifié avec le coompte fournis par l'entreprise.
+
+
 
