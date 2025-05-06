@@ -4,8 +4,15 @@ sidebar_position: 3
 
 # Android Studio
 
-Android studio est une application qui permet a la base de créer des applications Android mais on l'utisera ici comme un émulateur android pour tester notre solution
+Android studio est une application qui permet a la base la création d'applications Android. 
+Dans notre projet on l'utilisera ici pour son émulateur intégré pour tester Intune sur une interface mobile.
 
-Pour accéder a notre téléphone émulé, il faudra tout d'abord créer un projet, peu importe celui qu'on prend, puis revenir au menu du début, on aura aussi accès au trois petit points qui permettront d'accéder au "Virtual Device Manager" et on allumera le premier téléphone mise a disposition basé sur la version **16.0 de Android.**
-
+Pour accéder à un téléphone virtuel, il faut d’abord créer un projet (le choix du type importe peu), puis revenir à
+l’écran d’accueil. À partir de là, en cliquant sur les trois petits points situés en haut à droite, on accède au “Virtual
+Device Manager”.
+Il suffit ensuite de démarrer l’un des téléphones proposés — dans notre cas, un appareil basé sur Android 16.0 —
+pour émuler un environnement Android et y tester l’enrôlement Intune, la configuration d’applications, et
+l’expérience utilisateur.
 ![](/img/android.png)
+
+

@@ -4,13 +4,21 @@ sidebar_position: 1
 
 # Cahier des charges
 
-Une entreprise nous demande de mettre en place un Mobile Device Management (MDM) afin de permettre la conformité des entreprises aux normes de sécurité.
+Une entreprise nous sollicite pour mettre en place un Mobile Device Management (MDM) dans le but de permettre la conformité des appareils mobile de la structure aux normes de sécurité.
+Le BYOD sera particulièrement utiliser dans notre contexte, plusieurs employé souhaite utiliser leur propre équipement plutôt que ceux fournis par l'entreprise.
 
-On devra donc sécuriser et proteger les données sensibles afin de garantir l'intégrité des ressources mobiles dans un environnement professionnel.
+## Objectifs
 
-Solution apporté : 
+On devra sécuriser et proteger les données sensibles afin de garantir l'intégrité des ressources mobiles dans un environnement professionnel.
 
-Intune sera notre solution MDM
+## Solution apporté : 
 
-Android Studio sera utilisé afin d'émuler un appareil mobile.
+**Microsoft Intune** sera notre solution MDM, elle nous permettra :
+
+- L'enrôlement des appareils,
+- La gestion des applications,
+- La mise en œuvre de stratégies de conformité,
+- La protection des données professionnelles.
+
+**Android Studio** sera utilisé afin d'émuler un smartphone Android et permettra de tester les configuration, le déploiement des applciations et les politiques de sécurité.
 

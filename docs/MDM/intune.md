@@ -11,11 +11,17 @@ Notre test sera réaliser avec la version gratuite qui dure 30 jours.
 
 ## Pré-requis : 
 
-Intune prend en charge les appareils **Android 8.0 ou plus** mais possède plus de contrôle sur tout les **android 10 ou plus**
+Intune prend en charge les appareils **Android version 8.0 ou plus** mais possède plus de contrôle sur tout les **android 10 ou plus**
 
-Il suffira de se créer un compte microsoft pour l'entreprise et de répondre a la question de sécurité
+Il faudra avoir créer un compte microsoft dans l'entreprise qui permettra de rejoindre le portail Intune que ce soit pour l'administrateur ou les utilisateurs.
 
-Installé **portail entr. Microsoft Intune** sur l'appareil mobile afin de pouvoir vous authentifié avec le coompte fournis par l'entreprise.
+Chaque appareil mobile a controller il faudra : 
 
+- Installer le portail d'entreprise Intune depuis le Play Store.
 
+- Se connecter avec le compte Microsoft Professionnel.
+
+- Autoriser les droits d'administration
+
+- Enroler les appareils pour qu'ils soient reconnus par le controleur Intune.
 
