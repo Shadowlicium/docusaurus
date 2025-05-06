@@ -28,7 +28,7 @@ Chaque appareil mobile a controller il faudra :
 - Enroler les appareils pour qu'ils soient reconnus par le controleur Intune.
 
 
-## Sécuriter
+## Sécurité
 
 Pour sécuriser l'utilisation de Intune, nous avons mis en place l'authentification MFA (multifacteur) avec l'application Microsoft Authentificator.
 
@@ -43,3 +43,12 @@ avons attribué une licence Intune. Cela permet d’enrôler leurs appareils, d�
 déployer des applications et d'assurer le suivi depuis le centre d'administration.
 
 ![](/img/licence.png)
+
+Nous avons ensuite mis en place une authentification multifacteur (MFA) obligatoire pour chaque utilisateur à l’aide
+de l’application Microsoft Authenticator. Cette mesure renforce significativement la sécurité de l’environnement
+Microsoft Intune, en protégeant l’accès au portail d’entreprise ainsi qu’à l’ensemble des données et ressources de
+l’organisme.
+
+![](/img/authentif.png)
+
+
