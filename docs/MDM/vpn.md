@@ -11,7 +11,7 @@ Ce déploiement repose sur :
 
 * l’utilisation de **balises d’étendue** pour une gestion déléguée dans Intune. 
 
-**1\. Mise en place du tunnel VPN**
+## **1\. Mise en place du tunnel VPN**
 
 Un tunnel VPN nommé **Tunnel\_Entreprise** a été déployé pour assurer la connexion sécurisée des appareils.
 
@@ -42,7 +42,7 @@ Ces profils appliquent des restrictions d’accès en fonction des besoins méti
 
 * **Profil\_Tunnel\_RH** → accès à l’intranet RH
 
-![](/img/VPN1.png)
+![](/img/vpn.png)
 
 ## **3\. Attribution des groupes et balises**
 
@@ -71,4 +71,8 @@ Lors de l’arrivée d’un nouvel utilisateur :
 
    * les droits d’accès liés à sa fonction.
 
-![](/img/VPN1.png]
+## Schéma
+
+Voici le schéma qui représenta l'utilisateur qui se connecte dans l'entreprise.
+
+![](/img/VPN1.png)
