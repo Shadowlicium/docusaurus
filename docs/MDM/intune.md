@@ -4,57 +4,47 @@ sidebar_position: 2
 
 # Intune
 
-Intune sera l'application utiliser afin de gérer nos appareils mobiles.
+Intune sera l'application utilisée afin de gérer nos appareils mobiles.
 
-C'est une application créer et mise en place par Microsoft et permet son utilisation cloud.
-Notre test sera réaliser avec la version gratuite de 30 jours. 
+C'est une application créée et mise en place par Microsoft et permet son utilisation cloud. Notre test sera réalisé avec la version gratuite de 30 jours.
 
-Dans notre cas on voudra proposer les applications de l'entreprise qui se téléchargeront automatiquement tout en veillant a désactiver certains fonctionnalités et rajouter plus de terme de sécurité.
+Dans notre cas, on voudra proposer les applications de l'entreprise qui se téléchargeront automatiquement, tout en veillant à désactiver certaines fonctionnalités et à rajouter plus de termes de sécurité.
 
-## Pré-requis : 
+## Pré-requis :
 
-Intune prend en charge les appareils **Android version 8.0 ou plus** mais possède plus de contrôle sur tout les **android 10 ou plus**
+Intune prend en charge les appareils **Android version 8.0 ou plus**, mais possède plus de contrôle sur tous les **Android 10 ou plus**.
 
-Il faudra avoir créer un compte microsoft dans l'entreprise qui permettra de rejoindre le portail Intune que ce soit pour l'administrateur ou les utilisateurs.
+Il faudra avoir créé un compte Microsoft dans l'entreprise, qui permettra de rejoindre le portail Intune, que ce soit pour l'administrateur ou les utilisateurs.
 
-Chaque appareil mobile a controller il faudra : 
+Pour chaque appareil mobile à contrôler, il faudra :
 
 - Installer le portail d'entreprise Intune depuis le Play Store.
-
-- Se connecter avec le compte Microsoft Professionnel.
-
-- Autoriser les droits d'administration
-
-- Enroler les appareils pour qu'ils soient reconnus par le controleur Intune.
-
+- Se connecter avec le compte Microsoft professionnel.
+- Autoriser les droits d'administration.
+- Enrôler les appareils pour qu'ils soient reconnus par le contrôleur Intune.
 
 ## Sécurité
 
-Pour sécuriser l'utilisation de Intune, nous avons mis en place l'authentification MFA (multifacteur) avec l'application Microsoft Authentificator.
+Pour sécuriser l'utilisation d'Intune, nous avons mis en place l'authentification MFA (multifacteur) avec l'application Microsoft Authenticator.
 
 ![](/img/MFA.png)
 
-L'interface de Intune se présente ainsi, on peut voir les Utilisateurs qui ont été crées ainsi que leur adresse mail sur laquelle ils devront se connecter dans le **portail entreprise**
+L'interface d'Intune se présente ainsi. On peut voir les utilisateurs qui ont été créés ainsi que leur adresse mail sur laquelle ils devront se connecter dans le **portail entreprise**.
 
 ![](/img/microsoft.png)
 
-Afin de permettre aux utilisateurs d’accéder au portail d’entreprise et d’être gérés via Microsoft Intune, nous leur
-avons attribué une licence Intune. Cela permet d’enrôler leurs appareils, d’appliquer les stratégies de sécurité, de
-déployer des applications et d'assurer le suivi depuis le centre d'administration.
+Afin de permettre aux utilisateurs d’accéder au portail d’entreprise et d’être gérés via Microsoft Intune, nous leur avons attribué une licence Intune. Cela permet d’enrôler leurs appareils, d’appliquer les stratégies de sécurité, de déployer des applications et d'assurer le suivi depuis le centre d'administration.
 
 ![](/img/licence.png)
 
-Nous avons ensuite mis en place une authentification multifacteur (MFA) obligatoire pour chaque utilisateur à l’aide
-de l’application Microsoft Authenticator. Cette mesure renforce significativement la sécurité de l’environnement
-Microsoft Intune, en protégeant l’accès au portail d’entreprise ainsi qu’à l’ensemble des données et ressources de
-l’organisme.
+Nous avons ensuite mis en place une authentification multifacteur (MFA) obligatoire pour chaque utilisateur à l’aide de l’application Microsoft Authenticator. Cette mesure renforce significativement la sécurité de l’environnement Microsoft Intune, en protégeant l’accès au portail d’entreprise ainsi qu’à l’ensemble des données et ressources de l’organisme.
 
 ![](/img/authentif.png)
 
 ## Après installation du portail entreprise
 
-Une fois l'appareil inscrit et remonté dans Intune, nousavons accès à une vue détaillée de ses caractéristiques techniques dans la section "Matériel".\
-Cette interface permet de consulter plusieurs informations essentielles telles que : 
+Une fois l'appareil inscrit et remonté dans Intune, nous avons accès à une vue détaillée de ses caractéristiques techniques dans la section "Matériel".\
+Cette interface permet de consulter plusieurs informations essentielles telles que :
 
 - Le modèle et le système d’exploitation de l’appareil, ici un terminal Android de type sdk_gphone64_x86_64.
 - L’état de conformité, qui est marqué comme “Conforme”, indiquant que toutes les stratégies de sécurité et de configuration sont bien appliquées.
@@ -66,8 +56,7 @@ Cette visibilité complète sur le matériel permet à l’administrateur de sui
 
 ![](/img/compo.png)
 
-Depuis le portail d’administration Microsoft Intune, nous avons une vue centralisée sur l’ensemble des informations liées aux appareils gérés. 
-Sur cette interface, il est possible de visualiser :
+Depuis le portail d’administration Microsoft Intune, nous avons une vue centralisée sur l’ensemble des informations liées aux appareils gérés. Sur cette interface, il est possible de visualiser :
 - Le nombre d’appareils par plateforme (Windows, Android, iOS, etc.),
 - L’état de conformité de chaque appareil,
 - Les éventuelles erreurs de stratégie ou de déploiement,
@@ -89,26 +78,20 @@ Cette stratégie est appliquée automatiquement aux utilisateurs des groupes MDM
 
 ![](/img/outlook.png) ![](/img/outlook2.png)
 
-En cas de perte ou de vol d’un appareil, Microsoft Intune permet de réagir rapidement pour sécuriser les données de l’entreprise.  
-Depuis la console d’administration, l’administrateur peut sélectionner l’appareil concerné et exécuter des actions à distance telles que :
+En cas de perte ou de vol d’un appareil, Microsoft Intune permet de réagir rapidement pour sécuriser les données de l’entreprise. Depuis la console d’administration, l’administrateur peut sélectionner l’appareil concerné et exécuter des actions à distance telles que :
 
 * Le verrouillage de l’appareil, empêchant toute utilisation non autorisée,
-
 * La suppression sélective des données professionnelles, qui efface toutes les applications et données liées à l’entreprise sans impacter les données personnelles,
-
 * Ou encore une réinitialisation complète de l’appareil, si nécessaire.
 
 Dès que l’action est déclenchée, l’utilisateur perd immédiatement l’accès aux ressources de l’entreprise (Outlook, Teams, OneDrive, etc.), ce qui garantit que les informations sensibles ne puissent pas être compromises.
 
 ![](/img/vue.png)
 
-Une fois l’effacement ou la suppression d’un appareil effectuée depuis Intune, il n’est plus possible de revenir en arrière.  
-Si le téléphone est ensuite retrouvé, l’utilisateur devra :
-
+Une fois l’effacement ou la suppression d’un appareil effectuée depuis Intune, il n’est plus possible de revenir en arrière. Si le téléphone est ensuite retrouvé, l’utilisateur devra :
 1. Télécharger à nouveau l’application “Portail d’entreprise” depuis le Play Store,
-
 2. Se reconnecter avec ses identifiants professionnels,
-
 3. Et enfin suivre la procédure d’enrôlement habituelle.
 
 Une fois ces étapes réalisées, toutes les applications professionnelles (Outlook, Authenticator, etc.) ainsi que les stratégies de sécurité et de configuration seront automatiquement réinstallées sur le téléphone.
+

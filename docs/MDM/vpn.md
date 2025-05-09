@@ -9,7 +9,7 @@ Ce déploiement repose sur :
 
 * une **segmentation des accès** en fonction des rôles métier ;
 
-* l’utilisation de **balises d’étendue** pour une gestion déléguée dans Intune. 
+* l’utilisation de **balises d’étendue** pour une gestion déléguée dans Intune.
 
 ## **1\. Mise en place du tunnel VPN**
 
@@ -27,7 +27,6 @@ Un tunnel VPN nommé **Tunnel\_Entreprise** a été déployé pour assurer la co
 | **Balises d’étendue affectées** | Par défaut, vpn\_commerciaux, vpn\_rh, vpn\_tech |
 
 ![](/img/des.png)
-
 
 ## **2\. Création des profils VPN**
 
@@ -49,7 +48,7 @@ Ces profils appliquent des restrictions d’accès en fonction des besoins méti
 Chaque utilisateur est placé dans un groupe Azure AD correspondant à son métier.  
 Les profils VPN sont déployés automatiquement en fonction de l’appartenance au groupe, via les **balises d’étendue** associées.
 
-Il faudra mettre les utilisateurs correspondants dans leurs groupes respectifs au fur et à mesure de leurs arrivées dans l’entreprise afin de leurs données accès avec des différentes restriction 
+Il faudra mettre les utilisateurs correspondants dans leurs groupes respectifs au fur et à mesure de leur arrivée dans l’entreprise afin de leur donner accès avec des restrictions différentes.
 
 | Groupe Azure AD | Balise d'étendue | Accès VPN |
 | ----- | ----- | ----- |
@@ -73,6 +72,6 @@ Lors de l’arrivée d’un nouvel utilisateur :
 
 ## Schéma
 
-Voici le schéma qui représenta l'utilisateur qui se connecte dans l'entreprise.
+Voici le schéma qui représente l'utilisateur se connectant dans l'entreprise.
 
 ![](/img/VPN1.png)
